@@ -4,6 +4,10 @@ Liquid.ReadyState = SC.State.extend({
     Liquid.getPath('mainPage.mainPane').append();
   },
 
+  didLoad: function(){
+  	if ( Liquid) {};
+  },
+
   exitState: function() {
     Liquid.getPath('mainPage.mainPane').remove();
   }
